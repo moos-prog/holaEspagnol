@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#174b3b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Hola!">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>Hola! — Ton coach d'espagnol</title>
+<style>
+:root{--green:#17634b;--green2:#2c9b70;--ink:#18352c;--muted:#71837c;--bg:#f4f8f5;--card:#fff;--line:#e2ebe5;--pale:#e8f5ed}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+button,input{font:inherit}button{cursor:pointer}.app{max-width:680px;margin:auto;padding:16px 16px 28px}.top{display:flex;justify-content:space-between;align-items:center;margin:6px 0 18px}.brand{font-size:26px;font-weight:900;letter-spacing:-1px}.brand span{color:var(--green2)}.stats{font-weight:750;background:#fff;border:1px solid var(--line);border-radius:30px;padding:9px 12px;font-size:13px}
+.hero{background:linear-gradient(130deg,#174b3b,#287d5c);color:white;padding:22px;border-radius:24px;position:relative;overflow:hidden;box-shadow:0 8px 24px #174b3b20}.hero:after{content:"🇪🇸";position:absolute;right:8px;top:18px;font-size:66px;opacity:.17}.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.6px;opacity:.8}.hero h1{font-size:27px;line-height:1.1;margin:12px 0 8px;max-width:80%}.hero p{font-size:14px;line-height:1.5;opacity:.9;max-width:85%}.progress{height:9px;background:#ffffff42;border-radius:20px;overflow:hidden;margin-top:17px}.progress>i{display:block;height:100%;background:#8ce5b5;border-radius:20px;width:0;transition:.3s}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.section-title{font-size:19px;font-weight:850;margin:23px 0 12px}.muted{color:var(--muted)}.small{font-size:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:19px;padding:16px;margin:12px 0}.mission{display:flex;gap:12px;align-items:center}.emoji{width:44px;height:44px;display:grid;place-items:center;background:var(--pale);border-radius:14px;font-size:23px;flex-shrink:0}.btn{background:var(--green);color:white;border:0;border-radius:14px;padding:14px 16px;font-weight:800;width:100%;margin-top:12px}.btn.secondary{background:var(--pale);color:var(--green)}.btn.outline{background:white;color:var(--green);border:1px solid var(--line)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tile{border:1px solid var(--line);background:white;border-radius:17px;padding:15px;text-align:left;color:var(--ink);min-height:105px}.tile b{display:block;margin:8px 0 4px}.tile span{font-size:12px;color:var(--muted)}.nav{position:fixed;z-index:5;bottom:0;left:0;right:0;background:#ffffffed;backdrop-filter:blur(16px);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom));display:flex;justify-content:center}.navin{display:flex;max-width:680px;width:100%;gap:4px}.nav button{flex:1;border:0;background:transparent;border-radius:12px;padding:8px 2px;color:var(--muted);font-size:11px;font-weight:750}.nav button.active{background:var(--pale);color:var(--green)}.nav .ni{font-size:20px;display:block;margin-bottom:3px}.page{display:none}.page.active{display:block}.lesson{display:flex;gap:12px;align-items:center;width:100%;padding:13px;background:#fff;border:1px solid var(--line);border-radius:15px;text-align:left;color:var(--ink);margin:8px 0}.lesson .desc{flex:1}.lesson strong{display:block;font-size:14px}.lesson small{color:var(--muted)}.word{display:flex;justify-content:space-between;gap:10px;padding:12px;border-radius:12px;background:#f2f7f3;margin:7px 0}.word b{color:var(--green)}.quizopt{width:100%;text-align:left;padding:13px;border:1px solid var(--line);background:white;border-radius:12px;margin:5px 0;color:var(--ink)}.quizopt.good{border-color:#279b68;background:#eaf8ef}.quizopt.bad{border-color:#d45d5d;background:#fff0f0}.chatbox{height:330px;overflow:auto;background:white;border:1px solid var(--line);border-radius:17px;padding:12px;display:flex;flex-direction:column;gap:10px}.bubble{padding:11px 13px;border-radius:15px;max-width:88%;font-size:14px;line-height:1.45;white-space:pre-wrap}.bot{background:#edf5ef;align-self:flex-start}.me{background:var(--green);color:white;align-self:flex-end}.chatinput{display:flex;gap:8px;margin-top:9px}.chatinput input{min-width:0;flex:1;border:1px solid var(--line);border-radius:13px;padding:12px;background:white}.chatinput button{border:0;border-radius:13px;background:var(--green);color:white;padding:0 17px;font-weight:800}.pill{display:inline-block;padding:7px 10px;border-radius:30px;background:var(--pale);color:var(--green);font-size:12px;font-weight:750;margin:3px}.hide{display:none!important}.notice{font-size:12px;color:var(--muted);line-height:1.5}.day{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}.day:last-child{border:0}.day i{font-style:normal;background:var(--pale);border-radius:9px;padding:8px}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top"><div><div class="brand">hola<span>!</span> 🇪🇸</div><div class="small muted">TON COACH D'ESPAGNOL</div></div><div class="stats">🔥 <span id="streak">1</span> &nbsp; ⭐ <span id="xp">0</span></div></header>
+<main>
+<section id="home" class="page active">
+ <div class="hero"><div class="eyebrow">TON DÉFI · 14 JOURS</div><h1>¡Vamos a hablar español!</h1><p>Apprends à comprendre, répondre et tenir tes premières conversations.</p><div class="row small"><span>Ton parcours</span><b id="homeCount">0 / 14 jours</b></div><div class="progress"><i id="homeBar"></i></div></div>
+ <div class="section-title">¡Hola! Prêt à apprendre ? 👋</div>
+ <div class="card"><div class="row"><b>Ta mission du jour</b><span class="pill">20 MIN</span></div><div class="mission" style="margin-top:14px"><div class="emoji">🗣️</div><div><b>Parler et se présenter</b><div class="small muted">Vocabulaire, mini-leçon et conversation</div></div></div><button class="btn" onclick="showPage('learn')">Commencer ma séance →</button></div>
+ <div class="section-title">Tes entraînements</div><div class="grid">
+ <button class="tile" onclick="showPage('learn')">🧩<b>Vocabulaire</b><span>Les mots utiles</span></button>
+ <button class="tile" onclick="showPage('tutor')">🎙️<b>Conversation</b><span>Parler avec Lucía</span></button>
+ <button class="tile" onclick="showPage('learn')">✍️<b>Écriture</b><span>Construire tes phrases</span></button>
+ <button class="tile" onclick="showPage('progress')">🏆<b>Mes progrès</b><span>XP et objectifs</span></button></div>
+</section>
+<section id="learn" class="page">
+ <div class="eyebrow muted">TON PROGRAMME</div><h2>Apprendre étape par étape</h2><p class="muted small">Des leçons courtes, avec un quiz à chaque étape.</p>
+ <div id="lessonList"></div>
+ <div class="card"><b>Ton plan sur 14 jours</b><p class="notice">Jours 1–3 : présentation et questions · Jours 4–7 : quotidien et sorties · Jours 8–10 : phrases plus longues · Jours 11–14 : conversations et improvisation.</p></div>
+ <div id="lessonPanel" class="card hide"></div>
+</section>
+<section id="tutor" class="page">
+ <div class="eyebrow muted">ESPACE CONVERSATION</div><h2>Lucía, ta professeure 🤖</h2><p class="small muted">Écris en espagnol ou en français. Choisis un scénario pour commencer.</p>
+ <div><button class="pill" onclick="topic('Présentation')">👋 Présentation</button><button class="pill" onclick="topic('Restaurant')">☕ Restaurant</button><button class="pill" onclick="topic('Voyage')">✈️ Voyage</button><button class="pill" onclick="topic('Quotidien')">💬 Quotidien</button></div>
+ <div class="chatbox" id="chat"><div class="bubble bot">¡Hola! 😊 Je suis Lucía. On va pratiquer ensemble, à ton rythme.\n\nCommençons : ¿Cómo te llamas? (Comment tu t'appelles ?)</div></div>
+ <div class="chatinput"><input id="chatInput" placeholder="Écris ton message…" autocomplete="off"><button onclick="sendChat()">➤</button></div>
+ <div class="row" style="margin-top:8px"><button class="btn secondary" style="width:auto;flex:1" onclick="listen()">🎙️ Parler</button><button class="btn outline" style="width:auto;flex:1" onclick="speakLast()">🔊 Écouter</button></div>
+ <p class="notice">Le micro utilise la reconnaissance vocale disponible dans ton navigateur. La disponibilité dépend de l'iPhone et de la version d'iOS. Le tuteur de cette version fonctionne hors ligne avec des réponses pédagogiques intégrées : il ne s'agit pas encore d'une IA générative connectée.</p>
+</section>
+<section id="progress" class="page">
+ <div class="eyebrow muted">TABLEAU DE BORD</div><h2>Tes progrès 📈</h2>
+ <div class="grid"><div class="card"><div>⭐</div><h2 id="statXP">0</h2><div class="small muted">Points XP</div></div><div class="card"><div>📚</div><h2 id="statDone">0</h2><div class="small muted">Leçons terminées</div></div></div>
+ <div class="card"><b>Objectif : conversation en 14 jours</b><div class="progress" style="background:#e5eee8"><i id="progressBar" style="background:#2c9b70"></i></div><p class="small muted" id="progressLabel">0 % du parcours</p></div>
+ <div class="card"><b>Ton programme</b><div class="day"><i>🟢</i> Jours 1–3 · Se présenter et échanger</div><div class="day"><i>🟡</i> Jours 4–7 · Vie quotidienne</div><div class="day"><i>🟠</i> Jours 8–10 · Construire des phrases</div><div class="day"><i>🔵</i> Jours 11–14 · Conversations libres</div></div>
+ <button class="btn secondary" onclick="resetProgress()">Réinitialiser ma progression</button>
+</section>
+</main>
+</div>
+<nav class="nav"><div class="navin"><button class="active" data-page="home" onclick="showPage('home')"><span class="ni">🏠</span>Accueil</button><button data-page="learn" onclick="showPage('learn')"><span class="ni">📚</span>Leçons</button><button data-page="tutor" onclick="showPage('tutor')"><span class="ni">🤖</span>Tuteur</button><button data-page="progress" onclick="showPage('progress')"><span class="ni">📈</span>Progrès</button></div></nav>
+<script>
+const lessons=[
+{title:"Saluer et se présenter",sub:"Hola, me llamo…",words:[["Hola","Bonjour / Salut"],["Me llamo…","Je m’appelle…"],["Mucho gusto","Enchanté(e)"],["Soy francés / francesa","Je suis français / française"],["¿Y tú?","Et toi ?"]],q:"Comment dit-on « Je m’appelle Marie » ?",opts:["Soy Marie","Me llamo Marie","Estoy Marie"],a:1,ex:"Me llamo Marie = Je m’appelle Marie."},
+{title:"Poser des questions",sub:"¿Cómo estás?",words:[["¿Cómo estás?","Comment vas-tu ?"],["¿De dónde eres?","D’où viens-tu ?"],["¿Qué haces?","Que fais-tu ?"],["¿Cuántos años tienes?","Quel âge as-tu ?"]],q:"Comment demander « D’où viens-tu ? »",opts:["¿Dónde estás?","¿De dónde eres?","¿Qué quieres?"],a:1,ex:"¿De dónde eres? = D’où viens-tu ?"},
+{title:"Au restaurant",sub:"Quisiera un café, por favor.",words:[["Quisiera…","Je voudrais…"],["La carta, por favor","La carte, s’il vous plaît"],["Una mesa para dos","Une table pour deux"],["La cuenta, por favor","L’addition, s’il vous plaît"]],q:"Comment dire « Je voudrais un café » ?",opts:["Tengo un café","Quisiera un café","Soy un café"],a:1,ex:"Quisiera un café, por favor."},
+{title:"Se déplacer",sub:"¿Dónde está…?",words:[["¿Dónde está…?","Où se trouve… ?"],["A la derecha","À droite"],["A la izquierda","À gauche"],["Todo recto","Tout droit"]],q:"Que signifie « A la izquierda » ?",opts:["À gauche","À droite","Tout droit"],a:0,ex:"A la izquierda signifie à gauche."},
+{title:"Parler de sa journée",sub:"Hoy voy a…",words:[["Hoy","Aujourd’hui"],["Trabajo","Je travaille"],["Voy a…","Je vais…"],["Me gusta…","J’aime…"]],q:"Comment dire « J’aime le sport » ?",opts:["Soy deporte","Tengo deporte","Me gusta el deporte"],a:2,ex:"Me gusta el deporte = J’aime le sport."}
+];
+let state={xp:0,done:[],streak:1};try{state={...state,...JSON.parse(localStorage.getItem('holaState')||'{}')}}catch(e){}
+let current=0,lastSpanish="¡Hola! ¿Cómo estás?";
+function save(){localStorage.setItem('holaState',JSON.stringify(state));renderStats()}
+function renderStats(){let n=state.done.length,p=Math.round(n/14*100);document.getElementById('xp').textContent=state.xp;document.getElementById('streak').textContent=state.streak;document.getElementById('statXP').textContent=state.xp;document.getElementById('statDone').textContent=n;document.getElementById('homeCount').textContent=n+' / 14 jours';document.getElementById('homeBar').style.width=p+'%';document.getElementById('progressBar').style.width=p+'%';document.getElementById('progressLabel').textContent=p+' % du parcours validé'}
+function showPage(id){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===id));window.scrollTo(0,0)}
+function renderLessons(){document.getElementById('lessonList').innerHTML=lessons.map((l,i)=>`<button class="lesson" onclick="openLesson(${i})"><div class="emoji">${state.done.includes(i)?'✅':['👋','❓','☕','🧭','🕒'][i]}</div><div class="desc"><strong>${i+1}. ${l.title}</strong><small>${l.sub}</small></div><b>${state.done.includes(i)?'✓':'→'}</b></button>`).join('')}
+function openLesson(i){current=i;let l=lessons[i],p=document.getElementById('lessonPanel');p.classList.remove('hide');p.innerHTML=`<div class="row"><span class="eyebrow muted">MICRO-LEÇON</span><button class="pill" onclick="closeLesson()">Fermer ✕</button></div><h3>${i+1}. ${l.title}</h3><p class="small muted">${l.sub}</p><h4>À retenir</h4>${l.words.map(w=>`<div class="word"><b>${w[0]}</b><span class="small muted">${w[1]}</span></div>`).join('')}<h4>${l.q}</h4><div id="quiz">${l.opts.map((o,j)=>`<button class="quizopt" onclick="answer(${j})">${o}</button>`).join('')}</div><p id="feedback" class="small"></p><button id="validate" class="btn hide" onclick="closeLesson()">Continuer ✓</button>`;p.scrollIntoView({behavior:'smooth'})}
+function answer(j){let l=lessons[current],opts=document.querySelectorAll('.quizopt');opts.forEach((b,i)=>{b.disabled=true;if(i===l.a)b.classList.add('good');else if(i===j)b.classList.add('bad')});let ok=j===l.a;document.getElementById('feedback').textContent=(ok?'Bravo ! 🎉 ':'Pas tout à fait. ')+l.ex;if(ok&&!state.done.includes(current)){state.done.push(current);state.xp+=20;save();renderLessons()}document.getElementById('validate').classList.remove('hide')}
+function closeLesson(){document.getElementById('lessonPanel').classList.add('hide')}
+function addBubble(text,who){let d=document.createElement('div');d.className='bubble '+who;d.textContent=text;let c=document.getElementById('chat');c.appendChild(d);c.scrollTop=c.scrollHeight}
+function topic(t){let prompts={Présentation:'¡Hola! ¿Cómo te llamas?',Restaurant:'Buenas tardes, ¿qué quieres pedir?',Voyage:'Hola, ¿adónde quieres ir?',Quotidien:'¿Qué haces hoy?'};addBubble('Scénario : '+t+'. '+prompts[t],'bot');lastSpanish=prompts[t]}
+function sendChat(){let el=document.getElementById('chatInput'),s=el.value.trim();if(!s)return;addBubble(s,'me');el.value='';let t=s.toLowerCase(),r,sp;
+if(/bonjour|hola|salut|hello/.test(t)){r='¡Hola! 😊 ¿Cómo te llamas? Tu peux répondre : « Me llamo… »';sp='¡Hola! ¿Cómo te llamas?'}
+else if(/me llamo|je m'appelle|mi nombre/.test(t)){r='¡Mucho gusto! Enchantée ! ¿De dónde eres? (D’où viens-tu ?)';sp='¡Mucho gusto! ¿De dónde eres?'}
+else if(/fran|paris|francia|france/.test(t)){r='¡Qué bien! On peut dire « Soy de Francia ». ¿Hablas español?';sp='Soy de Francia. ¿Hablas español?'}
+else if(/restaurant|café|cafe|comer|manger/.test(t)){r='¡Perfecto! Au restaurant : « Quisiera una mesa para dos, por favor. » Essaie de le répéter !';sp='Quisiera una mesa para dos, por favor.'}
+else if(/viaje|voyage|avion|hotel|train/.test(t)){r='¡Buen viaje! Pour demander ton chemin : « ¿Dónde está la estación? »';sp='¿Dónde está la estación?'}
+else if(/gracias|merci/.test(t)){r='¡De nada! Une autre expression utile : « No hay de qué ». ';sp='¡De nada!'}
+else if(/como estas|cómo estás|bien|mal/.test(t)){r='¡Muy bien, gracias! ¿Y tú? Tu peux répondre « Estoy bien » (Je vais bien).';sp='¡Muy bien, gracias! ¿Y tú?'}
+else{r='¡Muy bien, seguimos! 😊 Exemple : « Yo quiero aprender español » (Je veux apprendre l’espagnol). Peux-tu faire une phrase avec « quiero » ?';sp='Yo quiero aprender español.'}
+lastSpanish=sp;state.xp+=3;save();setTimeout(()=>addBubble(r,'bot'),250)}
+document.getElementById('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter')sendChat()});
+function speakLast(){if(!('speechSynthesis'in window)){alert("La synthèse vocale n'est pas disponible sur ce navigateur.");return}let u=new SpeechSynthesisUtterance(lastSpanish);u.lang='es-ES';u.rate=.88;speechSynthesis.speak(u)}
+function listen(){let SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){alert("La reconnaissance vocale n'est pas disponible dans ce navigateur. Essaie Safari ou utilise le clavier.");return}let r=new SR();r.lang='es-ES';r.onresult=e=>{document.getElementById('chatInput').value=e.results[0][0].transcript;sendChat()};r.onerror=()=>alert("Autorise l'accès au micro dans les réglages du navigateur.");r.start()}
+function resetProgress(){if(confirm('Réinitialiser toutes tes leçons et tes XP ?')){state={xp:0,done:[],streak:1};save();renderLessons()}}
+function init(){renderLessons();renderStats()}
+init();
+if('serviceWorker'in navigator && location.protocol.startsWith('http'))window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
+</script>
+</body></html>
